@@ -1,0 +1,41 @@
+{
+  "title": "Guernsey Bin Night",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Find your bin nights",
+        "description": "Enter your full Guernsey postcode to find your address. No account or address ID is needed.",
+        "data": {"postcode": "Postcode"},
+        "data_description": {"postcode": "For example, GY1 1AA. Spaces and capital letters are optional."}
+      },
+      "address": {
+        "title": "Choose your address",
+        "description": "Select your address in {postcode}. Collection dates come from the States of Guernsey's My Bin Night service.",
+        "data": {"address_id": "Address"}
+      }
+    },
+    "error": {
+      "invalid_postcode": "Enter a full Guernsey postcode, such as GY1 1AA.",
+      "no_addresses": "No addresses were found. Check your postcode and try again.",
+      "too_many_results": "The collection service returned an incomplete address list. Check that you entered your full postcode and try again.",
+      "cannot_connect": "Unable to reach the States of Guernsey's bin collection service. Please try again.",
+      "invalid_response": "The collection service returned an unexpected response. Please try again later.",
+      "invalid_address": "Select an address from the list.",
+      "address_not_found": "This address is no longer available. Restart setup to search again."
+    },
+    "abort": {"already_configured": "This address is already configured."}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Collection updates",
+        "description": "Choose how often to check the collection service for schedule changes. Once every 24 hours is recommended. Sensors also advance automatically at midnight.",
+        "data": {"update_interval": "Update interval (hours)"},
+        "data_description": {"update_interval": "Between 1 and 24 hours."}
+      }
+    }
+  },
+  "entity": {
+    "sensor": {"next_collection": {"name": "Next collection"}}
+  }
+}
