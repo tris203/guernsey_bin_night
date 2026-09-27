@@ -16,7 +16,7 @@ def main() -> None:
     files = [
         path
         for path in COMPONENT.rglob("*")
-        if path.is_file() and path.suffix in {".py", ".json"}
+        if path.is_file() and path.suffix in {".py", ".json", ".png"}
     ]
     files.extend([ROOT / "README.md", ROOT / "LICENSE"])
     with ZipFile(destination, "w", ZIP_DEFLATED) as archive:

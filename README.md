@@ -6,6 +6,8 @@ Home Assistant sensors for the States of Guernsey's [My Bin Night](https://www.g
 
 Requires Home Assistant **2026.2 or later**.
 
+The bundled icon requires **Home Assistant 2026.3+**. Icon artwork is sourced from [Recycling for Guernsey](https://www.facebook.com/share/192fww63wb/) and is excluded from the MIT license.
+
 ### HACS
 
 Install from `tris203/guernsey_bin_night`:
